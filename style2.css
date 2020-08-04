@@ -1,0 +1,80 @@
+body{
+	background: url("media/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+	counter-reset: section;
+}
+
+h3::before{
+	counter-increment: section; content: "Technology " counter(section)": ";
+}
+
+h1{
+	color: white;
+	text-align: center;
+
+}
+
+h2{
+	color: pink;
+}
+
+h3{
+	color: LightGreen;
+}
+
+.article>p,ul{
+	color: LightBlue;
+}
+
+.nav{
+	background-color: grey;
+}
+
+#drop{
+	background-color: tomato;
+	border-color: tomato;
+	border-radius: 300px;
+	padding: 10px;
+}
+
+.dropdown-menu{
+	font-family: 'Grenze Gotisch', cursive;
+	text-decoration-line: underline;
+	text-underline-position: under;
+	border-radius: 5px;
+	counter-reset: section;
+}
+
+.dropdown-menu>a{
+	color: blue;
+}
+
+.dropdown-menu>a::before{
+	counter-increment: section; content:counter(section)": ";
+}
+.dropdown-menu>a:hover{
+	background-color: pink;
+}
+
+.article{
+	border: 3px solid yellow;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+video{
+	float: right;
+	padding-left: 20px;
+}
+
+
+footer{
+	border: 1px solid white;
+	padding: 7px;
+}
+
+footer>pre{
+	color: orange;
+}

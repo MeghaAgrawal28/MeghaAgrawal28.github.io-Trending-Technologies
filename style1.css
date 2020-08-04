@@ -1,0 +1,81 @@
+body{
+	background: url("media/back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 10px;
+}
+
+
+.col>p{
+	color: rgb(119, 136, 241);
+	font-weight: bold;
+}
+
+.carousel-inner, .carousel-item, .carousel-caption{
+	max-height:350px;
+}
+
+h2{
+	color: white;
+	text-align: center;
+}
+
+mark{
+	background-color: yellow;
+}
+
+table{
+	font-weight: bold;
+	background-color: pink;
+	margin-left: 150px;
+	}
+
+td,th{
+	text-align: center;
+	padding: 8px;
+	vertical-align: bottom;
+}
+  tr:nth-child(even)
+    {
+	background-color: grey;
+	}
+thead{
+	background-color: tomato;
+}
+
+tbody>tr:hover{
+ background-color: red;
+}
+
+.quote{
+ margin-left: 50px;
+ border-radius: 20px;
+ font-family: 'Pacifico', cursive;
+ text-decoration-line: underline;
+ text-decoration-color: grey;
+ text-underline-position: under;
+ border: 15px solid transparent;
+ border-image: url("media/boder.jpg") 30 round;
+ border-image-repeat: no-repeat;
+ padding: 10px;
+}
+
+.imagecard{
+	margin-right: 120px;
+	max-height: 500px;
+}
+
+.skill{
+	max-width: 400px;
+	height: 200px;
+}
+
+footer{
+	border: 2px solid LightBlue;
+	color: white;
+	padding: 10px;
+}
+
+.btn-primary{
+	margin-top: 5px;
+}

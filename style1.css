@@ -2,9 +2,23 @@ body{
 	background: url("media/back.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10px;
 }
 
+
+ body,html{
+ 	width: 100%;
+ 	overflow-x: hidden;
+ }
+
+
+.bg-info{
+	margin: 20px;
+	padding: 4px;
+}
+
+.container2{
+	margin: 30px;
+}
 
 .col>p{
 	color: rgb(119, 136, 241);
@@ -15,6 +29,32 @@ body{
 	max-height:350px;
 }
 
+@media only screen and (max-width: 768px) {
+	[class="carousel-caption"]{
+		margin-top: 10px !important;
+		bottom: 0 !important;
+		font-size: 10px !important;
+	}
+
+}
+@media only screen and (max-width: 768px) {
+	[class="carousel-indicators"]{
+		bottom: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	[class="nav"]{
+	width: 100%;
+	}
+}
+
+.row,.col{
+ margin: 10px;
+}
+
+
+
 h2{
 	color: white;
 	text-align: center;
@@ -24,10 +64,17 @@ mark{
 	background-color: yellow;
 }
 
+@media only screen and (max-width: 768px) {
+	table,[class='quote']{
+	max-height: auto;
+	max-width: 800px;
+	margin: 10px;	
+}
+}
+
 table{
 	font-weight: bold;
 	background-color: pink;
-	margin-left: 150px;
 	}
 
 td,th{
@@ -48,7 +95,6 @@ tbody>tr:hover{
 }
 
 .quote{
- margin-left: 50px;
  border-radius: 20px;
  font-family: 'Pacifico', cursive;
  text-decoration-line: underline;
@@ -60,9 +106,15 @@ tbody>tr:hover{
  padding: 10px;
 }
 
+ @media only screen and (max-width: 768px) {
+	[class="card-body"]{
+            margin: 10px;
+            width: 18rem;
+	}
+}
 .imagecard{
-	margin-right: 120px;
-	max-height: 500px;
+	height: 100%;
+
 }
 
 .skill{
@@ -70,10 +122,13 @@ tbody>tr:hover{
 	height: 200px;
 }
 
+
+
 footer{
 	border: 2px solid LightBlue;
 	color: white;
 	padding: 10px;
+	margin: 20px;
 }
 
 .btn-primary{

@@ -4,10 +4,25 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 10px;
+
+}
+   
+ @media only screen and (max-width: 786px){
+   html,body,[class="scheduler-border"]{
+    width: 100%;
+    overflow-x: hidden;
+  }
+ }
+ 
+ @media only screen and (max-width: 786px){
+form{
+    width: 100%;
+   }
 }
 
-	form {
-    width: 1000px;
+
+form {
+    width: 100%;
     margin: 0 auto;
 }
 	
@@ -36,4 +51,9 @@ legend.scheduler-border {
 .col-md-12,.col-md-6,.col-md-3,.form-check{
 	color: black;
 	font-weight: bold;
+}
+
+.btn{
+  padding: 10px;
+  margin: 10px;
 }

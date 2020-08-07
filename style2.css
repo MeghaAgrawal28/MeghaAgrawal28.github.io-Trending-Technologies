@@ -2,9 +2,19 @@ body{
 	background: url("media/back.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 10px;
 	counter-reset: section;
 }
+
+body,html{
+ 	width: 100%;
+ 	overflow-x: hidden;
+ }
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
 
 h3::before{
 	counter-increment: section; content: "Technology " counter(section)": ";
@@ -18,6 +28,7 @@ h1{
 
 h2{
 	color: pink;
+	margin-left: 20px;
 }
 
 h3{
@@ -30,6 +41,14 @@ h3{
 
 .nav{
 	background-color: grey;
+	width: 100%;
+}
+
+.btn-info{
+	border-radius: 300px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
 }
 
 #drop{
@@ -60,19 +79,32 @@ h3{
 
 .article{
 	border: 3px solid yellow;
-	padding: 5px;
+	
 	border-radius: 20px;
+	
 }
 
+.container2{
+	margin: 30px;
+}
+
+.row{
+	margin: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
 video{
-	float: right;
-	padding-left: 20px;
+  width: 100%;
+  margin: 0;
+}
 }
 
 
 footer{
 	border: 1px solid white;
 	padding: 7px;
+	margin: 20px;
 }
 
 footer>pre{

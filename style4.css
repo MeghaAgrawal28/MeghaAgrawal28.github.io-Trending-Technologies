@@ -1,0 +1,84 @@
+body{
+	background-image: url(media/back1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 786px){
+   html body{
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
+  }
+ }
+
+ nav{
+ 	margin: 10px;
+ }
+
+ .btn{
+  padding: 10px;
+  margin: 10px;
+}
+
+ .container{
+	margin: 30px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	
+}
+
+@media only screen and (max-width: 786px){
+ 	.container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	padding: 20px;
+	margin: 20px;
+}
+
+.zone{
+	width: 100%;
+}
+img{
+	width: 100%;
+}
+	
+ }
+
+
+.img13{
+  grid-column: span 2;
+	
+}
+
+.img13>img{
+	max-width: 600px;
+}
+
+.img2>img{
+	background-color: LightBlue;
+}
+
+img{
+	max-width: 400px;
+	border: 2px solid black;
+	border-radius: 20px;
+}
+
+.zone{
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.3s linear;
+
+}
+
+.zone:hover{
+	transform: scale(1.1);
+}
+
+
+
